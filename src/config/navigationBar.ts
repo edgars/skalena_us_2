@@ -7,6 +7,12 @@ export interface Logo {
 	text: string
 }
 
+export interface logoWhite {
+	src: string
+	alt: string
+	text: string
+}
+
 export interface NavSubItem {
 	name: string
 	link: string
@@ -34,8 +40,13 @@ export interface NavData {
 export const navigationBarData: NavData = {
 	logo: {
 		src: '/logo.svg',
-		alt: 'The tailwind astro theme',
-		text: 'Foxi.'
+		alt: 'Skalena US',
+		text: 'Skalena Inc.'
+	},
+	logoWhite: {
+		src: '/logo-white.svg',
+		alt: 'Skalena US',
+		text: 'Skalena Inc.'
 	},
 	navItems: [
 		{ name: 'Home', link: '/' },
@@ -51,7 +62,7 @@ export const navigationBarData: NavData = {
 				{ name: 'Terms', link: '/terms' }
 			]
 		},
-		{ name: 'Contact', link: '/contact' }
+
 	],
-	navActions: [{ name: 'Try it now', link: '/', style: 'primary', size: 'lg' }]
+	navActions: [{ name: 'Contact', link: '/contact', style: 'primary', size: 'lg' }]
 }

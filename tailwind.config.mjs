@@ -37,7 +37,7 @@ export default {
           200: "#fbcfe8",
           300: "#f9a8d4",
           400: "#f472b6",
-          500: "#E2187D",
+          500: "#5ab4c4",
           600: "#db2777",
           700: "#be185d",
           800: "#9d174d",
@@ -62,8 +62,8 @@ export default {
         fancy: "url(https://www.svgrepo.com/show/269/color-picker.svg)",
       },
       fontFamily: {
-        sans: ["Inter Variable", ...defaultTheme.fontFamily.sans],
-        headings: ["Outfit Variable", ...defaultTheme.fontFamily.sans],
+        sans: ["Quicksand Variable", ...defaultTheme.fontFamily.sans],
+        headings: ["Poppins", ...defaultTheme.fontFamily.sans],
       },
       keyframes: {
         dropdown: {
