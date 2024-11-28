@@ -12,7 +12,7 @@ import Col from '../../ui/Col.astro'
 import ChipNotification from '../../ui/ChipNotification.astro'
 import { Image } from 'astro:assets'
 import Button from '../../ui/Button.astro'
-import AvatarGroup from '../../ui/AvatarGroup.astro'
+
 
 // Content
 // - Hero Image
@@ -32,14 +32,12 @@ const avatars = [
 	<Row>
 		<Col span="2" />
 		<Col span="8" align="center">
-			<ChipNotification radius="rounded-full" classes="mb-6">
-				<strong>30K+</strong> satisfied customers
-				<AvatarGroup avatars={avatars} radius="rounded-full" slot="button" />
-			</ChipNotification>
-			<h1>Enhance team <strong>performance</strong> with seamless integration</h1>
 
-			<p class="pb-0 text-lg">Work smarter, not harder, with our innovative platform</p>
-			<Button size="lg" link="/">Get started for free</Button>
+			<h1>Welcome to <strong>Skalena</strong>, </h1>
+			<h3>where technology, design, and strategy converge to transform industries and <strong>enhance lives</strong> </h3>
+
+			<p class="pb-0 text-lg">We are dedicated to bringing your ideas to life, guiding you through the digital innovation landscape.</p>
+			<Button size="lg" link="/">Contact Us</Button>
 		</Col>
 		<Col span="2" />
 		<Col span="2" />
