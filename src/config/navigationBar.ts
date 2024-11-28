@@ -33,6 +33,7 @@ export interface NavAction {
 
 export interface NavData {
 	logo: Logo
+	logoWhite: logoWhite
 	navItems: NavItem[]
 	navActions: NavAction[]
 }
