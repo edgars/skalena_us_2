@@ -1,0 +1,29 @@
+---
+// Components
+// - Layout
+import Layout from '../layouts/Layout.astro'
+// - UI
+import FormHero from '../components/blocks/hero/ContactHero.astro'
+import CTA from '../components/blocks/CTA/BasicDark.astro'
+import KrakenDContent from '../components/blocks/krakend/KrakendContent.astro'
+import ContactCards from '../components/blocks/contact/ContactCards.astro'
+import SocialProof from '../components/blocks/socialproof/Basic.astro'
+
+// Content
+// - SEO
+const SEO = {
+	title: 'Krakend Reseller',
+	description:
+		'Skalena is one of the partners and reseller of KrakenD'
+}
+// - Page Header
+const header = {
+	title: 'Your reliable and expert<strong>KrakenD</strong> Partner.',
+	text: "We are ready to provide training, consulting and also to be your KrakenD reseller"
+}
+---
+
+<Layout title={SEO.title} description={SEO.description}>
+	<KrakenDContent classes="dark:bg-neutral-950/80" />
+	<SocialProof classes="dark:bg-neutral-950/80" />
+</Layout>

@@ -1,0 +1,102 @@
+---
+// Basic Cards grid Section
+// ------------
+// Description: A grid of cards with basic contact information in a 4 column layout.
+// Properties:
+// - classes: Additional classes to be added to the Section
+
+// Components
+// - Layout
+import Section from '../../ui/Section.astro'
+import Row from '../../ui/Row.astro'
+import Col from '../../ui/Col.astro'
+// - UI
+import Card from '../../ui/cards/BasicCard.astro'
+
+// 	Props
+type Props = {
+	classes?: string
+}
+const { classes } = Astro.props
+---
+
+<Section id="requests" classes={classes}>
+	<Row>
+		<Col span="12" align="center" classes="mb-12 max-w-4xl mx-auto animated-h2">
+			<h2 class="text-balance">We are your expert <strong>KrakenD</strong> partner</h2>
+			<p class="pb-0 text-lg">
+				Choose from one of the options below to get the specific help you need. Whether it's
+				customer support, sales inquiries, feature requests, or general feedback, we're here to
+				provide you with the best assistance possible.
+			</p>
+		</Col>
+	</Row>
+	<Row>
+		<Col span="4">
+			<Card
+				title="Optimize APIs deployment with Specialized KrakenD Consulting"
+				subtitle="As a dedicated KrakenD Business Partner, we offer specialized consulting services to help you fully leverage the platform’s potential. From architecture design and performance optimization to tailored solutions for your unique challenges, our expert consultants provide end-to-end guidance. Whether you’re starting with KrakenD or looking to scale and enhance your implementation, we ensure your systems are efficient, reliable, and ready to drive innovation. Let us help you achieve seamless API management with our expertise."
+				icon="rocket"
+				classes="text-center dark:!bg-neutral-800/50"
+				link="/contact"
+			/>
+		</Col>
+		<Col span="4">
+			<Card
+				title="Unlock the Power of KrakenD with Expert Training "
+				subtitle="As a trusted KrakenD Business Partner, we provide specialized, basic, and advanced training tailored to your unique needs. Our programs are designed to empower your team with the skills to maximize KrakenD's capabilities, from foundational concepts to advanced implementations. Whether you need hands-on sessions or custom-tailored training, we ensure your organization is equipped to optimize performance and accelerate innovation with KrakenD."
+				icon="document-text"
+				classes="text-center dark:!bg-neutral-800/50"
+				link="/contact"
+			/>
+		</Col>
+		<Col span="4">
+			<Card
+				title="Managed Services for KrakenD Workloads"
+				subtitle="At Skalena, we simplify your API management by offering comprehensive Managed Services for KrakenD. Our expert team handles every aspect of your KrakenD workloads, allowing you to focus on driving business growth while we ensure seamless operation. Let Skalena handle the complexity of your KrakenD workloads while you focus on innovation and growth. Partner with us to ensure your API infrastructure operates at peak performance. You can have a SaaS experience-like, with no harness and no headaches running your KrakenD at any cloud provider "
+				icon="bolt"
+				classes="text-center dark:!bg-neutral-800/50"
+				link="/contact"
+			/>
+		</Col>
+
+	</Row>
+</Section>
+<Section classes={classes}>
+	<Row>
+		<Col>
+			<h2>Welcome to Astro.js</h2>
+			<p>
+			  Astro.js is a powerful static site generator designed to deliver lightning-fast
+			  websites with modern development workflows. Below, you'll find an overview of its
+			  key features and benefits.
+			</p>
+			<h2>Key Features</h2>
+			<p>Astro.js offers several standout features that make it a top choice for developers:</p>
+			<ul>
+			  <li>Lightweight and fast performance with static site generation.</li>
+			  <li>Support for multiple frameworks like React, Vue, and Svelte.</li>
+			  <li>Seamless integration with modern tools and libraries.</li>
+			  <li>Built-in server-side rendering for dynamic content.</li>
+			</ul>
+		  
+			<h2>Why Choose Astro?</h2>
+			<p>
+			  Developers and businesses choose Astro.js because it delivers exceptional performance and a delightful developer experience:
+			</p>
+			<ol>
+			  <li>Reduce JavaScript payloads with Astro's zero-JS-by-default architecture.</li>
+			  <li>Enjoy fast builds with a highly optimized build process.</li>
+			  <li>Flexible integration with CMS, APIs, and third-party services.</li>
+			</ol>
+		  
+			<p>
+			  Ready to explore the possibilities with Astro.js? Check out the documentation and start building your next project today!
+			</p>
+		</Col>
+	</Row>
+
+
+  
+
+  </Section>

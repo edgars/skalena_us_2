@@ -1,0 +1,65 @@
+---
+// Components
+// - Layout
+import Layout from '../layouts/Layout.astro'
+// - UI
+import Feature from '../components/blocks/features/FeatureSticky.astro'
+import Hero from '../components/blocks/hero/PageHeader.astro'
+import CTA from '../components/blocks/CTA/BasicDark.astro'
+import Edgar from './edgar.astro'
+
+// Data
+import featuresData from '../data/json-files/featuresData.json'
+// - Feature Categories
+const featuresAnalytics = featuresData.filter((feature) => feature.category === 'Analytics')
+const featuresProductivity = featuresData.filter((feature) => feature.category === 'Productivity')
+const featuresSecurity = featuresData.filter((feature) => feature.category === 'Security')
+const featuresIntegrations = featuresData.filter((feature) => feature.category === 'Integrations')
+const featuresSupport = featuresData.filter((feature) => feature.category === 'Support')
+
+// Content
+// - SEO
+const SEO = {
+	title: 'Skalena | Digital Strategy',
+	description:
+		"At Skalena, we transform ideas into innovative digital products. Our process begins with understanding client needs, leading to the creation of solutions that are both technologically advanced and user-centric. "
+}
+// - Page Header
+const header = {
+	title: 'Digital <strong>Strategy</strong>',
+	text: 'Our commitment to excellence spans from concept to launch.'
+}
+---
+
+<Layout title={SEO.title} description={SEO.description}>
+	<Hero title={header.title} text={header.text} />
+
+	<Feature
+		title="Skalena Method"
+		text="In today's rapidly evolving digital landscape, a robust and adaptable digital strategy is essential for technology companies aiming to thrive. At Skalena, we draw inspiration from leading global consultancies to offer a holistic approach that fosters continuous innovation and places the customer at the heart of every decision."
+		data={featuresAnalytics}
+	/>
+	<!-- <Feature
+		title="Efficiency Unleashed"
+		text="Streamline tasks and focus on what matters with tools designed to boost your productivity."
+		data={featuresSecurity}
+		classes="bg-neutral-50 dark:bg-neutral-900"
+	/>
+	<Feature
+		title="Ultimate Data Protection"
+		text="Keep your data safe with top-notch security measures and real-time threat detection."
+		data={featuresProductivity}
+	/>
+	<Feature
+		title="Seamless Connectivity"
+		text="Effortlessly connect your favorite apps and automate workflows for a smoother workday."
+		data={featuresIntegrations}
+		classes="bg-neutral-50 dark:bg-neutral-900"
+	/>
+	<Feature
+		title="24/7 Expert Help"
+		text="Our friendly support team is always here to assist you with any questions or issues."
+		data={featuresSupport}
+	/> -->
+	<Edgar />
+</Layout>

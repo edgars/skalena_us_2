@@ -1,14 +1,14 @@
 [
 	{
-		"title": "Real-Time Analytics",
-		"icon": "chart-pie",
-		"description": "Gain valuable insights instantly with Foxi's real-time analytics. Track performance metrics, user behavior, and campaign effectiveness effortlessly.",
+		"title": "Continuous Innovation",
+		"icon": "rocket",
+		"description": "Innovation is not a one-time event but an ongoing process. We invest in research and development to stay ahead of technological trends and meet the ever-changing needs of our clients.",
 		"category": "Analytics"
 	},
 	{
-		"title": "Customizable Dashboards",
-		"icon": "squares-plus",
-		"description": "Tailor your workspace with personalized dashboards that suit your workflow. Stay organized and focused on what matters most to your business.",
+		"title": "Digital Transformation",
+		"icon": "bolt",
+		"description": "Embracing digital transformation requires more than adopting new technologies; it demands a cultural shift towards agility, collaboration, and experimentation. We assist companies in aligning their business processes and operational models with emerging technologies.",
 		"category": "Analytics"
 	},
 	{
@@ -54,9 +54,9 @@
 		"category": "Security"
 	},
 	{
-		"title": "Advanced Reporting",
-		"icon": "clipboard-document-list",
-		"description": "Generate detailed reports with advanced analytics features. Customize reports to track key performance indicators and gain deeper insights.",
+		"title": "Customer-Centric Focus",
+		"icon": "cursor-arrow-ripple",
+		"description": "Understanding the needs and behaviors of customers is paramount. We prioritize customer experience in all strategic digital decisions, ensuring that our products and services are tailored to deliver exceptional value.",
 		"category": "Analytics"
 	},
 	{
@@ -96,9 +96,9 @@
 		"category": "Security"
 	},
 	{
-		"title": "Custom Themes",
-		"icon": "paint-brush",
-		"description": "Customize the look and feel of your workspace with custom themes. Choose from various design options to match your brand's style.",
+		"title": "Data Analysis and Artificial Intelligence",
+		"icon": "arrow-trending-up",
+		"description": "Leveraging advanced data analytics and AI enables data-driven decision-making. This approach allows for personalized customer experiences, operational optimization, and the identification of new market opportunities.",
 		"category": "Analytics"
 	},
 	{
@@ -108,9 +108,9 @@
 		"category": "Security"
 	},
 	{
-		"title": "Performance Tracking",
-		"icon": "arrow-trending-up",
-		"description": "Monitor and track performance metrics to ensure optimal efficiency. Use performance data to make informed decisions and improvements.",
+		"title": "Security and Compliance",
+		"icon": "key",
+		"description": "In an era of increasing cyber threats, digital security is a priority. We ensure compliance with global and local regulations related to data privacy and ethical practices.",
 		"category": "Analytics"
 	},
 	{
@@ -120,15 +120,27 @@
 		"category": "Support"
 	},
 	{
-		"title": "Custom Widgets",
-		"icon": "squares-plus",
-		"description": "Enhance your dashboard with custom widgets. Add and configure widgets to display the most relevant information for your needs.",
+		"title": "Strategic Partnerships",
+		"icon": "trophy",
+		"description": "Collaborating with other companies, startups, and academic institutions drives innovation and expands market reach. Strategic partnerships provide new perspectives and access to great technologies.",
 		"category": "Analytics"
 	},
 	{
-		"title": "Data Visualization",
-		"icon": "eye",
+		"title": "Organizational Culture and Capacity Building",
+		"icon": "user-group",
 		"description": "Visualize your data with advanced charting and graphing tools. Create insightful visual representations to better understand your metrics.",
+		"category": "Analytics"
+	},
+	{
+		"title": "Adaptability and Scalability",
+		"icon": "cube-transparent",
+		"description": "Our digital solutions are designed to be adaptable and scalable, enabling swift responses to market changes and customer demands.",
+		"category": "Analytics"
+	},
+	{
+		"title": "Let's go?",
+		"icon": "light-bulb",
+		"description": "By adhering to these principles, Skalena empowers technology companies not only to survive but to prosper in the ever-evolving digital landscape",
 		"category": "Analytics"
 	},
 	{
