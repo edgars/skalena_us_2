@@ -1,0 +1,37 @@
+---
+// Components
+// - Layout
+import Layout from '../layouts/Layout.astro'
+// - UI
+import SidebarContent from '../components/blocks/basic/StickySidebar.astro'
+import Hero from '../components/blocks/hero/PageHeader.astro'
+import PrivacyPolicyMD from '../data/markdown-files/privacy-policy.md'
+
+// Content
+// - SEO
+const SEO = {
+	title: 'Skalena | Privacy Policy',
+	description:
+		"Foxi's terms of service outlines the rules and regulations that govern your use of our services. Please read them carefully to understand your rights and responsibilities."
+}
+// - Page Header
+const header = {
+	title: 'Terms and Conditions: Read, Relax, <strong>Enjoy!</strong>',
+	text: 'Please read them carefully to understand your rights and responsibilities.'
+}
+---
+
+<Layout title={SEO.title} description={SEO.description}>
+	<SidebarContent>
+		<div slot="sidebar">
+			<h3>We respect your privacy</h3>
+			<p>
+				In this site, we use the minimum possible related to the cookies or information about our visitors, we believe that is the fair way for establishing great relations and business.
+			</p>
+		</div>
+		<div class="basic-text">
+			<PrivacyPolicyMD />
+		</div>
+	</SidebarContent>
+	
+</Layout>

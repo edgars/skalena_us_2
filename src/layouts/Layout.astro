@@ -20,6 +20,7 @@ import '@fontsource-variable/space-grotesk'
 import "@fontsource-variable/quicksand";
 // Data
 import { configData } from '../config/config'
+import CookiesConsent from '../components/blocks/cookies/CookieConsent.astro'
 
 
 
@@ -48,6 +49,7 @@ const { title, description, ogImage, noindex } = Astro.props
 		<Main>
 			<slot />
 		</Main>
+		<CookiesConsent/>
 		<Footer />
 		<Modal />
 		<Scriprs />
