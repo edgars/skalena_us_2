@@ -12,13 +12,63 @@ import Row from '../../ui/Row.astro'
 import Col from '../../ui/Col.astro'
 // - UI
 import Card from '../../ui/cards/BasicCard.astro'
+import TextImage from '../basic/TextImage.astro'
+
+// Content
+import highlight01 from '../../../assets/highlights/logo-krakend.svg'
+import highlight01mobile from '../../../assets/highlights/logo-krakend.svg'
 
 // 	Props
 type Props = {
 	classes?: string
 }
 const { classes } = Astro.props
+
+type HighlightBlock = {
+	title: string
+	text: string
+	image: any
+	mobileImage?: any
+	imageWidth: number
+	imageHeight: number
+	imagePosition: 'left' | 'right'
+}
+const highlightBlocks: HighlightBlock[] = [
+	{
+		title: 'Doing right <strong>Since the first time</strong>',
+		text: 'At Skalena, we bring unparalleled expertise to help you harness the full potential of the KrakenD API Gateway. Our consulting services are designed to empower your API ecosystem, ensuring seamless integration, robust performance, and tailored solutions that align with your business objectives. .From strategy and architecture design to implementation and optimization, we provide end-to-end support that enhances your API management capabilities. Whether you are deploying KrakenD for the first time or scaling an existing setup, Skalena team of experts ensures a smooth, secure, and high-performing API infrastructure.Let Skalena transform your KrakenD experience, enabling your business to innovate faster, streamline operations, and deliver exceptional value to your clients.',
+		image: highlight01,
+		imageWidth: highlight01.width,
+		imageHeight: highlight01.height,
+		mobileImage: highlight01mobile,
+		imagePosition: 'left'
+	},
+]
 ---
+---
+
+<style>
+	ul {
+	list-style-type: disc; /* Use discs as the bullet points */
+	margin: 1rem 0; /* Add vertical spacing */
+	padding-left: 2.0rem; /* Indent the list */
+
+  }
+  
+  ul li {
+	margin-bottom: 0.5rem; /* Add spacing between list items */
+	line-height: 1.6; /* Improve readability with increased line spacing */
+  }
+  
+  ul li::marker {
+	color: #1e8e92; /* Custom color for the bullet points (blue) */
+  }
+  
+  ul li:hover {
+	color: #1e8e92; /* Change text color on hover */
+	; /* Show pointer cursor to indicate interactivity   cursor: pointer */
+  }
+</style>
 
 <Section id="requests" classes={classes}>
 	<Row>
@@ -65,34 +115,101 @@ const { classes } = Astro.props
 <Section classes={classes}>
 	<Row>
 		<Col>
-			<h2>Welcome to Astro.js</h2>
+			<h2>The API Gateway pattern at its full extent</h2>
 			<p>
-			  Astro.js is a powerful static site generator designed to deliver lightning-fast
-			  websites with modern development workflows. Below, you'll find an overview of its
-			  key features and benefits.
+				KrakenD creates an API able to connect, secure, aggregate, transform or remove data from your services.
 			</p>
-			<h2>Key Features</h2>
-			<p>Astro.js offers several standout features that make it a top choice for developers:</p>
-			<ul>
-			  <li>Lightweight and fast performance with static site generation.</li>
-			  <li>Support for multiple frameworks like React, Vue, and Svelte.</li>
-			  <li>Seamless integration with modern tools and libraries.</li>
-			  <li>Built-in server-side rendering for dynamic content.</li>
-			</ul>
+			<h4><strong>KrakenD</strong> Key Features</h4>
+			<p>Here’s a list of the main features of the KrakenD API Gateway</p>
+			<ul class="list-group">
+				<li class="list-group-item">
+				  <strong>High Performance:</strong> KrakenD is designed for ultra-low latency and high throughput, making it ideal for handling large-scale traffic efficiently.
+				</li>
+				<li class="list-group-item">
+				  <strong>Flexible Architecture:</strong> Offers a fully customizable, declarative configuration to tailor your API gateway to your needs without writing additional code.
+				</li>
+				<li class="list-group-item">
+				  <strong>No Middleware:</strong> A stateless architecture ensures there’s no dependency on external services, reducing complexity and improving reliability.
+				</li>
+				<li class="list-group-item">
+				  <strong>Advanced Caching:</strong> Built-in support for caching responses to reduce server load and improve client-side performance.
+				</li>
+				<li class="list-group-item">
+				  <strong>Authentication and Authorization:</strong> Provides features like OAuth, JWT, and more to secure your APIs out of the box.
+				</li>
+				<li class="list-group-item">
+				  <strong>Rate Limiting and Quotas:</strong> Protects your backend services by controlling traffic with rate limiting and usage quotas.
+				</li>
+				<li class="list-group-item">
+				  <strong>Service Composition:</strong> Allows combining multiple backend services into a single endpoint, reducing client complexity.
+				</li>
+				<li class="list-group-item">
+				  <strong>Built-In Security:</strong> Offers features like TLS termination, IP whitelisting, and more to protect your services.
+				</li>
+				<li class="list-group-item">
+				  <strong>Analytics and Monitoring:</strong> Provides integration with monitoring tools like Prometheus, Grafana, or ELK Stack for detailed insights.
+				</li>
+				<li class="list-group-item">
+				  <strong>Extensibility:</strong> Supports custom plugins written in Go for advanced customization and additional functionality.
+				</li>
+			  </ul>
+			  
 		  
-			<h2>Why Choose Astro?</h2>
+			<h2><strong>KrakenD</strong>'s main use cases</h2>
 			<p>
-			  Developers and businesses choose Astro.js because it delivers exceptional performance and a delightful developer experience:
+			  The reasons for KrakenD to be your strong option for your API Gateway:
 			</p>
-			<ol>
-			  <li>Reduce JavaScript payloads with Astro's zero-JS-by-default architecture.</li>
-			  <li>Enjoy fast builds with a highly optimized build process.</li>
-			  <li>Flexible integration with CMS, APIs, and third-party services.</li>
-			</ol>
+			<ul class="list-group">
+				<li class="list-group-item">
+				  <strong>API Gateway:</strong> Acts as a single entry point to your services, managing all API requests and responses efficiently.
+				</li>
+				<li class="list-group-item">
+				  <strong>Microservices Integration:</strong> Orchestrates multiple microservices into a cohesive API, reducing complexity for clients.
+				</li>
+				<li class="list-group-item">
+				  <strong>Backends for Frontends (BFF):</strong> Tailors APIs for specific client needs, enabling optimized and simplified API interactions for mobile, web, or IoT applications.
+				</li>
+				<li class="list-group-item">
+				  <strong>Load Balancing:</strong> Distributes requests across multiple backend services to improve performance and reliability.
+				</li>
+				<li class="list-group-item">
+				  <strong>Rate Limiting and Traffic Control:</strong> Protects backend services by managing request rates and controlling excessive traffic.
+				</li>
+				<li class="list-group-item">
+				  <strong>API Security:</strong> Secures APIs with authentication (OAuth, JWT, etc.), IP whitelisting, and TLS termination.
+				</li>
+				<li class="list-group-item">
+				  <strong>Service Aggregation:</strong> Combines data from multiple services into a single API response, simplifying client-side logic.
+				</li>
+				<li class="list-group-item">
+				  <strong>Transformation and Filtering:</strong> Modifies, filters, or reformats API responses to suit client needs or comply with data privacy requirements.
+				</li>
+				<li class="list-group-item">
+				  <strong>High Performance Caching:</strong> Reduces backend load and latency by caching frequently accessed responses.
+				</li>
+				<li class="list-group-item">
+				  <strong>Monitoring and Analytics:</strong> Integrates with tools like Prometheus, ELK Stack, or Grafana to provide insights into API usage and performance.
+				</li>
+			  </ul>
+
+			  {
+				highlightBlocks.map((highlight, key) => (
+					<TextImage
+						id={`highlight-${key}`}
+						title={highlight.title}
+						text={highlight.text}
+						image={highlight.image}
+						imageWidth={highlight.imageWidth}
+						imageHeight={highlight.imageHeight}
+						mobileImage={highlight.mobileImage}
+						imagePosition={highlight.imagePosition}
+						classes={key === 0 ? '!pb-0' : key === highlightBlocks.length - 1 ? '!pt-0' : '!py-0'}
+					/>
+				))
+			}
+			  
 		  
-			<p>
-			  Ready to explore the possibilities with Astro.js? Check out the documentation and start building your next project today!
-			</p>
+
 		</Col>
 	</Row>
 

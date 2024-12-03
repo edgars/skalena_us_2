@@ -54,13 +54,12 @@ export const navigationBarData: NavData = {
 		{ name: 'Pricing', link: '/pricing' },
 		{ name: 'Features', link: '/features' },
 		{
-			name: 'Resources',
+			name: 'Partners',
 			link: '#',
 			submenu: [
-				{ name: 'Blog', link: '/blog' },
-				{ name: 'Changelog', link: '/changelog' },
-				{ name: 'FAQ', link: '/faq' },
-				{ name: 'Terms', link: '/terms' }
+				{ name: 'KrakenD', link: '/krakend' },
+				{ name: 'API7', link: '/api7' },
+				{ name: 'Workhub24', link: '/workhub24' }
 			]
 		},
 

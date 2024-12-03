@@ -8,6 +8,7 @@ import Features from '../components/blocks/features/FeatureCards.astro'
 import Testimonial from '../components/blocks/testimonials/BasicDark.astro'
 import HighlightBlocks from '../components/blocks/highlights/HightlightRows.astro'
 import CTA from '../components/blocks/CTA/BasicDark.astro'
+import CookiesConsent from '../components/blocks/cookies/CookieConsent.astro'
 
 // Content
 // - Testimonial background
@@ -26,4 +27,5 @@ const SEO = {
 	<!--<Testimonial bg={testimonialBackground} bgPosition="right" /> -->
 	 <HighlightBlocks />
 	<!--<CTA />-->
+	<CookiesConsent client:only="react"/>
 </Layout>
